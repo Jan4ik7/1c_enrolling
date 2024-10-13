@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор калорий</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Калькулятор калорий</h1>
+
+    <div id="dish-section">
+        <h2>Добавить Блюдо</h2>
+        <form id="form">
+            <input type="text" name="name" placeholder="Название блюда" required>
+            <input type="number" name="bmr" placeholder="КБЖУ" required step="any">
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+
+    <div id="search-section">
+        <h2>Поиск Блюд</h2>
+        <button id="show-search" onclick=" Visibility()">Показать список</button>
+        <input type="text" id="search-input" placeholder="Поиск по названию" onkeyup="searchDishes()">
+        <ul id="dish-list"></ul>
+    </div>
+
+    <h2>Наш выбор блюд</h2>
+    <ul id="selected-dish-list"></ul>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
